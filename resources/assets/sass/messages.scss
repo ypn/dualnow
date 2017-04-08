@@ -1,0 +1,139 @@
+$line-separate:#ccc;
+
+main{
+	padding: 40px 0 100px 0;
+	background: #eaeaea;
+
+	.dizz{
+		background: #000;		
+		.read{
+
+			font-weight: bold;color: #000;
+		}
+	}
+
+	background:url('/images/bg_champion_lissandra_1920x1080.jpg') no-repeat;	
+	background-size:cover;	
+	background-attachment: fixed;
+}
+
+
+.message-menu{
+	padding:10px 0;
+	ul{	
+		.title{	
+			margin:10px;			
+			background: #141414;	
+			border-radius:5px;	
+			color: #fff;
+			a{
+				padding:10px;	
+				width: 100%;
+				display: inline-block;	
+				color: #fff;		
+				&:hover{
+					text-decoration: none;
+				}
+			}
+		}		
+		
+	}
+
+	.strng{		
+		font-size: 18px;
+	}
+}
+.entry-message{
+	textarea{
+		resize:vertical;
+		min-height: 150px;
+		margin-bottom: 10px;
+	}
+
+	border-bottom:1px solid #ccc;
+	padding-bottom:20px;
+
+}
+
+.list-message{
+
+	.gen{	
+		position: relative;			
+	}
+
+
+	li{
+		clear: both;
+		margin:20px 0;		
+	}
+	.mss{
+		width:80%;	
+		
+		margin:20px 0;
+
+		img{
+			width: 75px; 
+			height: 75px; 	
+		}
+
+		p{
+			padding:10px;
+			color: #fff;
+		}
+	}
+	.in-mss{		
+		float:right;
+		img{
+			float: right;
+		}		
+
+		.mss-content{
+			@extend .gen;
+			margin-right: 90px;				
+			span{
+				position:absolute;	
+				font-size: 45px;
+				color: #95c2ec;	
+				top: -13px;
+				right:-11px;		
+			}	
+
+			p{
+				background:#95c2ec;
+			}
+
+
+
+		}
+	}
+
+	.out-mss{		
+		float:left;
+		img{
+			float: left;			
+		}
+		.mss-content{
+			@extend .gen;
+			span{
+				position:absolute;		
+				top: -13px;
+				left:-11px;	
+				font-size: 45px;
+				color: #87bb71;		
+			}
+			margin-left: 90px;
+
+			p{
+				background: #87bb71;
+			}	
+			
+		}
+	}
+}
+
+.conversation{
+	textarea{
+		border-radius:0;
+	}
+}
+

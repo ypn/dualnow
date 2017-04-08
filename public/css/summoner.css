@@ -1,0 +1,205 @@
+body {
+  background: #fff;
+}
+
+body .label {
+  font-weight: normal;
+}
+
+body header {
+  background: #2b3b4b;
+}
+
+body #check {
+  fill: none;
+  stroke: green;
+  stroke-width: 10;
+  stroke-dasharray: 180;
+  stroke-linejoin: round;
+  stroke-dashoffset: 180;
+  -webkit-animation: draw 2s 1 forwards;
+  animation: draw 2s 1 forwards;
+}
+
+@-webkit-keyframes draw {
+  to {
+    stroke-dashoffset: 1;
+  }
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 1;
+  }
+}
+
+body .y-tree .tree-name {
+  font-weight: 600;
+}
+
+body .y-tree ul {
+  padding: 0;
+  list-style: none;
+  color: #369;
+  font-weight: bold;
+  position: relative;
+}
+
+body .y-tree ul:before {
+  content: "";
+  display: block;
+  width: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  border-left: 1px solid;
+}
+
+body .y-tree li {
+  position: relative;
+  line-height: 2em;
+  margin-left: 4em;
+}
+
+body .y-tree li:before {
+  content: "";
+  display: block;
+  border-top: 1px solid;
+  position: absolute;
+  height: 0;
+  top: 1em;
+  left: -4em;
+  width: 69px;
+}
+
+body .y-tree li:last-child:before {
+  background: #fff;
+  height: auto;
+  top: 1em;
+  bottom: 0;
+}
+
+body main {
+  padding: 40px 0 100px 0;
+}
+
+body main .summon-info {
+  margin-left: 20px;
+}
+
+body main .summon-info .summoner-name {
+  color: #242929;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Helvetica';
+}
+
+body main .summon-info h5 {
+  margin-top: 5px;
+  color: #01040e;
+  font-weight: 600;
+}
+
+body main .summon-info .more-info {
+  border-top: 1px solid #ccc;
+  margin-top: 40px;
+  padding-top: 20px;
+}
+
+body main .summon-info .more-info .more-info-item {
+  margin-bottom: 20px;
+}
+
+body main .qoute-me {
+  background: #0d2848;
+  border: 2px solid transparent;
+  color: #c3c4d2;
+  border-radius: 5px;
+  font-style: italic;
+  font-size: 20px;
+  padding: 20px;
+}
+
+body main .qoute-client {
+  background: #bb3010;
+  border: 2px solid transparent;
+  color: #c3c4d2;
+  border-radius: 5px;
+  font-style: italic;
+  font-size: 20px;
+  padding: 20px;
+}
+
+/*best lane option*/
+#setting-table .left-title {
+  display: inline-block;
+  width: 25%;
+}
+
+#setting-table .right-info {
+  display: inline-block;
+  width: 70%;
+}
+
+#setting-table .right-info li {
+  float: left;
+  margin-right: 10px;
+}
+
+#setting-table .right-info li:last-child {
+  float: none;
+}
+
+#setting-table .final-action {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+}
+
+#setting-table .final-action button {
+  padding: 1px 12px;
+}
+
+#setting-table .backend {
+  display: none;
+}
+
+#setting-table .backend p {
+  font-size: 12px;
+}
+
+#setting-table .backend .form-group .form-control {
+  width: 50%;
+  display: inline-block;
+}
+
+#setting-table .backend .form-group label {
+  font-weight: normal;
+}
+
+#setting-table .backend .ycdd > li {
+  border-bottom: 1px  solid #ccc;
+}
+
+#setting-table .backend .ycdd > li:last-child {
+  border-bottom: none;
+  padding-top: 15px;
+}
+
+.profile-icon-item input + img {
+  /* IMAGE STYLES */
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.profile-icon-item input {
+  visibility: hidden;
+  position: absolute;
+}
+
+.profile-icon-item input:checked + img {
+  border: 2px solid red;
+}
+
+/*# sourceMappingURL=summoner.css.map */

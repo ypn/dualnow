@@ -1,0 +1,131 @@
+main {
+  padding: 40px 0 100px 0;
+  background: #eaeaea;
+  background: url("/images/bg_champion_lissandra_1920x1080.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main .dizz {
+  background: #000;
+}
+
+main .dizz .read {
+  font-weight: bold;
+  color: #000;
+}
+
+.message-menu {
+  padding: 10px 0;
+}
+
+.message-menu ul .title {
+  margin: 10px;
+  background: #141414;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.message-menu ul .title a {
+  padding: 10px;
+  width: 100%;
+  display: inline-block;
+  color: #fff;
+}
+
+.message-menu ul .title a:hover {
+  text-decoration: none;
+}
+
+.message-menu .strng {
+  font-size: 18px;
+}
+
+.entry-message {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.entry-message textarea {
+  resize: vertical;
+  min-height: 150px;
+  margin-bottom: 10px;
+}
+
+.list-message .gen, .list-message .in-mss .mss-content, .list-message .out-mss .mss-content {
+  position: relative;
+}
+
+.list-message li {
+  clear: both;
+  margin: 20px 0;
+}
+
+.list-message .mss {
+  width: 80%;
+  margin: 20px 0;
+}
+
+.list-message .mss img {
+  width: 75px;
+  height: 75px;
+}
+
+.list-message .mss p {
+  padding: 10px;
+  color: #fff;
+}
+
+.list-message .in-mss {
+  float: right;
+}
+
+.list-message .in-mss img {
+  float: right;
+}
+
+.list-message .in-mss .mss-content {
+  margin-right: 90px;
+}
+
+.list-message .in-mss .mss-content span {
+  position: absolute;
+  font-size: 45px;
+  color: #95c2ec;
+  top: -13px;
+  right: -11px;
+}
+
+.list-message .in-mss .mss-content p {
+  background: #95c2ec;
+}
+
+.list-message .out-mss {
+  float: left;
+}
+
+.list-message .out-mss img {
+  float: left;
+}
+
+.list-message .out-mss .mss-content {
+  margin-left: 90px;
+}
+
+.list-message .out-mss .mss-content span {
+  position: absolute;
+  top: -13px;
+  left: -11px;
+  font-size: 45px;
+  color: #87bb71;
+}
+
+.list-message .out-mss .mss-content p {
+  background: #87bb71;
+}
+
+.conversation textarea {
+  border-radius: 0;
+}
+
+/*# sourceMappingURL=messages.css.map */
