@@ -118,7 +118,17 @@ class Controller extends BaseController
     	return view('home',array('summoners'=>$summoners));
     }   
 
-    public function curl(){   
+    public function curl(){
+    	$ch = curl_init();
+
+    	curl_setopt($ch, CURLOPT_URL, 'http://localhost:8087/v3/servers/_defaultServer_/users');    
+
+    	curl_exec($ch);
+
+    	curl_close($ch);
+    }
+
+    public function curl_tt(){   
 
     	$header[0] = "Accept: text/xml,application/xml,application/xhtml+xml,";
 		$header[0] .= "text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5";
@@ -134,7 +144,7 @@ class Controller extends BaseController
     	curl_setopt($ch, CURLOPT_URL, "http://www.op.gg/champion/statistics");
     	curl_setopt($ch,CURLOPT_USERAGENT,'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0');    	
 
-		curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
+		//curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);		
 
 		$dom = new simple_html_dom();
@@ -308,7 +318,8 @@ class Controller extends BaseController
 
 
 	public function downloadnow(){
-		$file = public_path('images/MODSKINPRO_7.1.2.rar');
+		//$file = public_path('images/MODSKINPRO_7.1.2.rar');
+		$file = 'https://youtu.be/e771hCecIyw';
 		return Response::download($file);
 	}
 

@@ -39,7 +39,9 @@
     </div>
 
     <!-- jQuery -->
-   	<script type="text/javascript" src="/js/app.js" ></script>    
+   	<script type="text/javascript" src="/js/app.js" ></script>      
+
+   
     <!-- Custom Theme Scripts -->
     <script src="/js/admin/custom.min.js"></script>
   </body>
